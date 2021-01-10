@@ -1,0 +1,3 @@
+let x = flip1 0.6 in
+let y = flip2 0.4 in
+(x, y)

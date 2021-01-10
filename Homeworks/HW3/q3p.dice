@@ -1,0 +1,10 @@
+let a = flip 0.333333 in 
+let b = flip 0.333333 in
+let c = flip 0.333333 in
+let _ = observe 
+((a&&!b&&!c)||(!a&&b&&!c)||(!a&&!b&&c)) in 
+let switch = if a then b || c 
+else 
+( if b then b else c
+)
+in switch

@@ -1,0 +1,16 @@
+let door = discrete(0.33333,0.33333,0.33333) in
+
+let host =
+	if ((door == int(3, 0))) then
+		(flip 0.5)
+	else
+		(if (door == int(3, 1)) then
+			(true)
+		else
+			(false)
+		)
+	in
+
+let tmp = observe host in
+
+door

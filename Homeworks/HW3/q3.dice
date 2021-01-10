@@ -1,0 +1,13 @@
+fun open2(){
+	let x = discrete(0.6, 0.3, 0.1) in 
+	let z = observe ! (x == int(3, 1)) in
+	x == int (3,2) 
+}
+
+fun open3(){
+        let x = discrete(0.6, 0.3, 0.1) in
+        let z = observe ! (x == int(3, 2)) in
+        x == int (3,1)
+}
+
+open3()
